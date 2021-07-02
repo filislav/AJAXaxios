@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <div>
+        номер страницы: <input type="number" value='1' id="page-number"> <br>
+        количество элементов: <input type="number" value='1' id="elNumb">
+    </div>
+    <div class="buttons">
+        <div>
+            <button class="click-me">Get Images</button>
+        </div>
+        <div>
+            <button class="get-tasks">Get Tasks</button>
+        </div>
+    </div>
+    <div id="tasks"></div>
+    <div>
+        <div>
+            номер задачи: <input type="number" value='' id="task-number"><br>
+            текст задачи: <input type="text" placeholder="введите текст" id="task-text">
+        </div>
+        <div class="buttons">
+            <div>
+                <button class="update">Update task</button>
+            </div>
+            <div>
+                <button class="delete">Delete task</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="service.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script> -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
